@@ -10,10 +10,10 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-{{--
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5133207660073027"
             crossorigin="anonymous"></script>
---}}
+
     @stack('adsense')
 </head>
 <body
