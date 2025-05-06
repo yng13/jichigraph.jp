@@ -1,0 +1,23 @@
+<svg id="jichigraph_favicon.svg" xmlns="http://www.w3.org/2000/svg"
+     width="140"
+     height="140"
+     viewBox="0 0 140 140">
+    <defs>
+        <style>
+            .cls-1 { fill: #f27521; }
+            .cls-1, .cls-2, .cls-3 { fill-rule: evenodd; }
+            .cls-2 { fill: #feb83a; }
+        </style>
+    </defs>
+    <g id="pin_icon">
+        <g id="graph">
+            <path id="rect_o" class="cls-1" d="M527.984,796.269h22.869v43.908H527.984V796.269Z"
+                  transform="translate(-499.625 -744.125)"/>
+            <path id="rect_y" class="cls-2" d="M555.426,776.145h22.869v64.032H555.426V776.145Z"
+                  transform="translate(-499.625 -744.125)"/>
+        </g>
+        <path id="pin" class="cls-1"
+              d="M552.682,744.129a53.055,53.055,0,0,1,53.056,53.055c0,29.3-48.182,87.816-53.056,87.816s-53.055-58.514-53.055-87.816A53.054,53.054,0,0,1,552.682,744.129Zm0,11.891a39.335,39.335,0,1,1-39.334,39.335A39.334,39.334,0,0,1,552.682,756.02Z"
+              transform="translate(-499.625 -744.125)"/>
+    </g>
+</svg>
