@@ -10,21 +10,24 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+{{--
     @env('production')
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5133207660073027"
-            crossorigin="anonymous"></script>
-    <!-- ads1 -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5133207660073027"
+                crossorigin="anonymous"></script>
+        <!-- ads1 -->
 
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-5133207660073027"
-         data-ad-slot="5500132869"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5133207660073027"
+             data-ad-slot="5500132869"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
     @endenv
+--}}
     @stack('adsense')
 </head>
 <body
