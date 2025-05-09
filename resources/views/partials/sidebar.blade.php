@@ -27,7 +27,7 @@
             <div>
                 <h3 class="mb-4 text-xs uppercase leading-[20px] text-gray-400">
                     <span class="menu-group-title" :class="sidebarToggle ? 'lg:hidden' : ''">
-                        メニュー
+                        埼玉県川口市のオープンデータ
                     </span>
 
                     <svg :class="sidebarToggle ? 'lg:block hidden' : 'hidden'"
@@ -46,13 +46,13 @@
                            @click.prevent="selected = (selected === 'Dashboard' ? '':'Dashboard')"
                            class="menu-item group" :class="
                             (selected === 'Dashboard') ||
-                             (page === 'ecommerce' ||
-                             page === 'analytics' ||
-                             page === 'marketing' ||
+                             (page === 'aed' ||
+                             page === 'nursing_care' ||
+                             page === 'medical' ||
                              page === 'crm' ||
                              page === 'stocks') ? 'menu-item-active' : 'menu-item-inactive'">
                             <svg
-                                :class="(selected === 'Dashboard') || (page === 'ecommerce' || page === 'analytics' || page === 'marketing' || page === 'crm' || page === 'stocks') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
+                                :class="(selected === 'Dashboard') || (page === 'aed' || page === 'nursing_care' || page === 'medical' || page === 'crm' || page === 'stocks') ? 'menu-item-icon-active'  :'menu-item-icon-inactive'"
                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -79,10 +79,24 @@
                             <ul :class="sidebarToggle ? 'lg:hidden' : 'flex'"
                                 class="flex flex-col gap-1 mt-2 menu-dropdown pl-9">
                                 <li>
-                                    <a href="{{ secure_url('/') }}" class="menu-dropdown-item group"
+                                    <a href="{{ secure_url('/map/aed') }}" class="menu-dropdown-item group"
                                        :class="
-                                        page === 'ecommerce' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
-                                        eCommerce
+                                        page === 'aed' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        AED設置場所一覧
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ secure_url('/map/nursing_care') }}" class="menu-dropdown-item group"
+                                       :class="
+                                        page === 'nursing_care' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        介護サービス事業所一覧
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ secure_url('/map/medical') }}" class="menu-dropdown-item group"
+                                       :class="
+                                        page === 'medical' ? 'menu-dropdown-item-active' : 'menu-dropdown-item-inactive'">
+                                        医療機関一覧
                                     </a>
                                 </li>
                             </ul>

@@ -72,3 +72,6 @@ Route::get('/signup', function () {
     return view('examples.signup');
 });
 
+Route::get('/map/{map_name?}', function ($map_name = 'aed') {
+    return view('map', ['map_name' => $map_name]);
+});

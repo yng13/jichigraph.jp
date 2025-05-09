@@ -21,6 +21,7 @@
         "flatpickr": "^4.6.13",
         "fullcalendar": "^6.1.17",
         "jsvectormap": "^1.6.0",
+        "leafmap": "^1.1.7",
         "swiper": "^11.2.6"
     }
 }
