@@ -1,0 +1,106 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class PopulationStatistic extends Model
+{
+    use HasFactory;
+
+    protected $table = 'population_statistics';
+
+    protected $fillable = [
+        'municipality_code',
+        'municipality_name',
+        'survey_date',
+        'region_code',
+        'region_name',
+        'total_population',
+        'male_population',
+        'female_population',
+        'male_0_4',
+        'female_0_4',
+        'male_5_9',
+        'female_5_9',
+        'male_10_14',
+        'female_10_14',
+        'male_15_19',
+        'female_15_19',
+        'male_20_24',
+        'female_20_24',
+        'male_25_29',
+        'female_25_29',
+        'male_30_34',
+        'female_30_34',
+        'male_35_39',
+        'female_35_39',
+        'male_40_44',
+        'female_40_44',
+        'male_45_49',
+        'female_45_49',
+        'male_50_54',
+        'female_50_54',
+        'male_55_59',
+        'female_55_59',
+        'male_60_64',
+        'female_60_64',
+        'male_65_69',
+        'female_65_69',
+        'male_70_74',
+        'female_70_74',
+        'male_75_79',
+        'female_75_79',
+        'male_80_84',
+        'female_80_84',
+        'male_85_plus',
+        'female_85_plus',
+        'households_count',
+        'remarks',
+    ];
+
+    // 必要に応じて数値型のキャストも追加
+    protected $casts = [
+        'total_population' => 'integer',
+        'male_population' => 'integer',
+        'female_population' => 'integer',
+        'male_0_4' => 'integer',
+        'female_0_4' => 'integer',
+        'male_5_9' => 'integer',
+        'female_5_9' => 'integer',
+        'male_10_14' => 'integer',
+        'female_10_14' => 'integer',
+        'male_15_19' => 'integer',
+        'female_15_19' => 'integer',
+        'male_20_24' => 'integer',
+        'female_20_24' => 'integer',
+        'male_25_29' => 'integer',
+        'female_25_29' => 'integer',
+        'male_30_34' => 'integer',
+        'female_30_34' => 'integer',
+        'male_35_39' => 'integer',
+        'female_35_39' => 'integer',
+        'male_40_44' => 'integer',
+        'female_40_44' => 'integer',
+        'male_45_49' => 'integer',
+        'female_45_49' => 'integer',
+        'male_50_54' => 'integer',
+        'female_50_54' => 'integer',
+        'male_55_59' => 'integer',
+        'female_55_59' => 'integer',
+        'male_60_64' => 'integer',
+        'female_60_64' => 'integer',
+        'male_65_69' => 'integer',
+        'female_65_69' => 'integer',
+        'male_70_74' => 'integer',
+        'female_70_74' => 'integer',
+        'male_75_79' => 'integer',
+        'female_75_79' => 'integer',
+        'male_80_84' => 'integer',
+        'female_80_84' => 'integer',
+        'male_85_plus' => 'integer',
+        'female_85_plus' => 'integer',
+        'households_count' => 'integer',
+    ];
+}

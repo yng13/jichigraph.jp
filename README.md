@@ -1,61 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# jichigraph.jp
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## プロジェクト概要
 
-## About Laravel
+jichigraph.jp は、自治体のオープンデータを活用し、地域の課題を可視化することで、解決策を検討するための情報を提供するウェブアプリケーションです。埼玉県川口市のオープンデータをサンプルとして使用し、人口統計、交通、環境、教育などのデータをダッシュボードで分かりやすく表示します。また、ユーザーが地域の課題を投稿し、それに対する解決策を提案できる機能を備えています。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 目的
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* 自治体オープンデータを活用した地域課題の可視化
+* データに基づいた地域課題解決策の検討支援
+* 市民参加型の課題共有と解決策提案プラットフォームの提供
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 機能
 
-## Learning Laravel
+1.  **地域の課題を可視化するダッシュボード:**
+    * 川口市の人口統計、交通、環境、教育などのデータをグラフやチャートで表示します。
+    * 地域住民が現状を直感的に把握できるようなUIを提供します。
+2.  **ユーザーが地域の課題を投稿できる機能:**
+    * ユーザーが具体的な地域の課題をテキストや画像で投稿できます。
+    * 投稿された課題はダッシュボードに関連付けて表示されます。
+3.  **課題に対する解決策を提案できる機能:**
+    * 投稿された課題に対して、他のユーザーが解決策を提案できます。
+    * 良い解決策は評価される仕組みも検討します。
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 技術スタック
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* **フロントエンド:** Vue 3
+* **バックエンド:** Laravel 12
+* **データベース:** MySQL
+* **データ可視化:** Chart.js
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 開発環境
 
-## Laravel Sponsors
+* **開発環境:** ローカルMac + UTM の CentOS Stream 10
+    * **Webサーバー**
+        * HTTPD: Apache 2.4
+        * PHP: 8.4
+        * PHP-FPM: 8.4
+        * Node.js: 20.10.0
+    * **DBサーバー**
+        * MySQL: 8.0
+        * データベース名: `jichigraph_jp`
+        * ユーザー名: `jichigraph_jp`
+* **バージョン管理:** GitHub
+* **CI/CD:** GitHub Actions
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 開発ガイド
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+* **Laravel コントローラ/モデル:** バックエンドの API 開発は `app/Http/Controllers` と `app/Models` ディレクトリを参照してください。
+* **Vue コンポーネント:** フロントエンドのコンポーネントは `resources/js/components` ディレクトリに配置されます。
+* **データ可視化:** Chart.js を使用してデータを表示するためのロジックは Vue コンポーネント内に実装されます。
+* **API ドキュメント:** （後日追加予定）
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 貢献
 
-## Code of Conduct
+本プロジェクトへの貢献を歓迎します。バグ報告、機能追加の提案、プルリクエストなど、お気軽にお寄せください。
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## ライセンス
 
-## Security Vulnerabilities
+**MIT License**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+このプロジェクトは MIT ライセンスの下で公開されています。詳細については、プロジェクトのライセンスファイルをご覧ください。
